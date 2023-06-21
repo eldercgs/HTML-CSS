@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'love larry';
+            src: url('love larry.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif
+        }
+        h1 {
+            font-family: 'love larry', serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Como alternativa a buscas de fontes, temos a opçãa do site <a href="https://www.dafont.com/pt/" target="_blank" rel="external
+        ">dafont.com</a>.</p>
+    <p><a href="index.html">Página 01</a></p>
+
+    <p>Selecionamos a fonte no site, baixamos na pasta desejada, extraimos o arquivo zipado, como primeiro item do STYLE chamamos a regra @FONT-FACE, na URL acrescentamos o nome do arquivo da fonte com sua terminação entre os parênteses e aspas simples, em seguida utilizamos FORMAT  e preenchemos com a terminação mais adequada. Depois substituimos o nome da FONT- FAMILY pel nome do arquivo e está pronto.</p>
+    <p>Existem alguns tipos de FORMAT:
+        <ul>
+            <li>opentype (otf)</li>
+            <li>truetype (ttf)</li>
+            <li>embedded-opentype</li>
+            <li>truetype-aat(Apple Advanced Tipografy)</li>
+            <li>svg</li>
+    
+        </ul>
+    </p>
+    <p>Exemplo:</p>
+    <pre>
+        <code>
+            style>
+        @font-face {
+            font-family: 'love larry';
+            src: url('love larry.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif
+        }
+        h1 {
+            font-family: 'love larry', serif;
+            font-size: 3em;
+        }
+            /style
+        </code>
+    </pre>
+</body>
+</html>

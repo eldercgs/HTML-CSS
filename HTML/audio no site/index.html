@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="SM" type="image/x-icon">
+    <title>Audio </title>
+</head>
+<body>
+    <h1>Áudio no Site</h1>
+    <p>Pode-se baixar áudios gratuitos sem direitos autorais através do YouTube no YouTube Studio na <a href="https://studio.youtube.com/channel/UCfn4ceIQ5-sx6EhpaxboHug/music" target="_blank" rel="external">biblioteca de Áudio</a>.</p>
+    <p>É necessário tomar cuidado com o tamanho da mídia.</p>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <h3>Obs.</h3>
+    <p> <strong>Há no código duas maneiras de inserir áudios no site, os dois foram testados e ambos funcionam no site com limitações, a função autoplay não funciona. Não escreverei o passo a passo aqui no site, mas recomendo que veja o código. Os dois códigos estão escritos, porém é necessário escolher um e testá-lo para ver se é possível chegar ao resultado necessário.</strong></p>
+  <audio src="midia/Pick Up On This - The Mini Vandals.mp3" controls autoplay>Música</audio> 
+    <p>Geralmente os navegadores tem compatibilidade de áudio com MP3, WAVE e OGG. Os arquivos com terminação WAVE são muito pesado, melhor evitar.</p><!--Geralmente os navegadores tem compatibilidade de áudio com MP3, WAVE e OGG-->
+    <h2>Outra maneira de adicionar áudio</h2>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.mp3" type="audio/wave">
+        <source src="midia/happy-mistake.mp3" type="audio/ogg">
+    </audio>
+     <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/happy-mistake.mp3">Clique aqui</a> para baixar o arquivo em MP3.</p>
+</body>
+</html>

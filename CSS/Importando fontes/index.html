@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Importando</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,300;1,300&display=swap');
+        body {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 16px;
+            color: darkblue;
+        }
+        h1 {
+            font-family:'kaushan Script', sans-serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando Google fontes</h1>
+
+    <p>Podemos importar fontes externas através do site <a href="https://fonts.google.com/"  target="_blank" rel="external">https://fonts.google.com/</a></p>
+    <p>Lá podemos pesquisar o tipo de fonte, depois de selecionar a fonte, podemos clicar no "quadrado com um pontinho vermelho localizado no canto superior direito da tela e selecionamos IMPORT, logo após copiamos o código sem a tag STYLE e colamos na configuração de estilo do site. Deve ser colado como primeira configuração do style. Veja exemplo:</p>
+    <pre>
+        <code>
+            style
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: darkblue;
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        style
+        </code>
+    </pre>
+    <p>Em seguida substituímos o FONT-FAMILY pela fonte importada e atualizamos a página.</p>
+    <pre>
+        <code>
+            style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,300;1,300&display=swap');
+        body {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 16px;
+            color: darkblue;
+        }
+            /style
+        </code>
+    </pre>
+    <p><a href="fonte02.html" target="_self">Página 02</a></p>
+</body>
+</html>

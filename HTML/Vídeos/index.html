@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="SM" type="image/x-icon">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Vídeos</h1>
+    <p>É possível baixar vídeos sem problemas com direitos autorais no site <a href="https://www.pexels.com/pt-br/videos/" target="_blank" rel="external">pexels</a> na aba vídeos.</p>
+    <p>Deve-se evitar colocar vídeos muito pesados no site, segue-se a mesma premissa das imagens. É possível reduzir o tamanho do vídeo, com um qualidade razoável, baixando o aplicativo <a href="https://handbrake.fr/" target="_blank" rel="external">HANDBREAK</a>, onde pode-se converter os vídeos para vários formatos desejados.</p>
+    <p>O peso do vídeo está diretamente ligado ao valor investido na hospedagem do site, podendo gerar muito gasto para o cliente.</p>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado em meu próprio servidor.</p>
+   <!-- <video src="video/pizza.webm" width="600" height="400" controls></video>-->
+    <video width="600" height="400" controls poster="SM" loop>
+        <source src="video/pizza.mp4" type="video/mp4">
+        <source src="video/pizza.m4v" type="video/mp4">
+        <source src="video/pizza.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos, baixe seu MP4 <a href="video/pizza.mp4">aqui</a>.</p>
+    </video>
+    <p>O segundo jeito de colocar vídeos no site é similar ao de áudio. Veja o código para maiores esclarecimentos. Neste caso, deixei o segundo meio funcionando e deixei o primeiro nos comentários do código, por acreditar ser o segundo meio mais efetivo, visto que me dá a possibilidade de adicionar outros formatos sobressalhentes como alternativa de buscas de formatos. Ainda lembrando que o algorítimo buscará sempre a promeira opção de SOURCE e depois seguirá buscando as outras opções conforme ordem do código.</p>
+
+    <h1>Incorporação de vídeos</h1>
+    <p>Nós podemos adicionar vídeos no site linkando-os de plataforma de vídeos na internet.</p>
+    <p>Por exemplo, podemos usar o YouTube. Escolhemos o vídeo, clicamos em compartilhar e depois em incorporar, esta opção gera um código HTML automaticamente para seu código (é possível modificá-lo), depois é só copiar e colar no mesmo.</p>
+    <iframe width="600" height="315" src="https://www.youtube.com/embed/Tqe6SBIMzpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>O Site Vimeo, também é uma alternativa para busca de vídeos, também é possível utilizar um modo profissional (Business), o qual permite você direcionar os vídeos para pessoas escolhidas, como assinantes do seu curso, por exemplo. </p>
+
+    
+</body>
+</html>

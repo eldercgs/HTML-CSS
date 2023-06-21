@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            background-color: brown;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkblue;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+            outline-width: 5px;
+            outline-style: solid;
+            outline-color: rgb(236, 165, 13);
+            
+        }
+        a {
+            border-width: 10px;
+            border-style: dashed;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de BOX-LEVEL, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    <p>Para melhor compreensaão dos exemplos, é necessário verificar o código do exercício. Trabalhamos com os conceitos e configurações de margem, outline e  padding.</p>
+    <h2>Usando shorthands</h2>
+    <p>Podemos usar alguns shorthands para configurar as caixas (box-leve):</p>
+
+    <pre>
+        border-width: 10px;
+        border-style: solid;
+        border-color: darkblue;
+    </pre>
+    <p>O código acima é o mesmo que:</p>
+    <pre>
+        border: 10px, solid, darkblue;
+    </pre>
+
+    <h3>Outros shorthands</h3>
+    <p>O padding, tambémpode ser configurado em shorthand:</p>
+    <pre>
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    </pre>
+    <pre>
+        padding: 10px (top), 10px (right), 10px (bottom), 10px (left);
+    </pre>
+    <p>Coloquei a ordem de colocação das medidas, mas não pode colocar os parênteses. Configura-se em sentido horário.</p>
+    <p>Ainda podemos simplificar ainda mais nosso código, pois se o valor de todas as margens ou paddings for o mesmo, por exemplo 10px, basta indicar o valor somente uma vez e o programa entenderá que as configurações de todos os lados é a mesma. Exemplo:</p>
+    <pre>padding: 10px;</pre>
+    <pre>border:10px;</pre>
+    <p>Outro maneira de se configurar elementos como margem, padding ou outline é indicando apenas dois valores, o programa entenderá que o primeiro valor é a configuração da parte de cima e de baixo (top, bottom) e o segundo número a configuração dos lados direito e esquerdo (right e left). Exemplo:</p>
+    <pre>padding: 10px 20px;</pre>
+    <p>No exemplo acima, sem shorthand ficaria assim:</p>
+    <pre>
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    </pre>
+    <p>Para centralizar a margem com o objetivo de centralizar a caixa no meio da página, usamos MARGIN: AUTO;</p>
+    <P>Podemos mesclar esse comando com o shorthand exemplificado acima:</P>
+    <pre>
+        margin 10px auto 40px auto;
+    </pre>
+    <p>para OUTLINE usamos a seguinte configuração como shorthand: -width, -style, -color. Veja o exemplo:</p>
+    <pre>
+        outline: 10px solid red;
+    </pre>
+    <p>Os shorthands diminuem consideravelmente seu código.</p>
+    <h2>Configurando o display</h2>
+    <p>a configuração padrão para a box-level é DISPLAY BLOCK  e para o box-inline é DISPLAY INLINE, porém podemos mudar essa configuração padrão através do simples comando dentro do H1:</p>
+    <pre>
+        display: inline;
+    </pre>
+    <p>Podemos ver que é bem diferente de como se apresenta a cima, no topo do site, onde a configuração permanece padrão.</p>
+    <p>A visualização fica assim:</p>
+    <p><img src="display inline2.png" alt=""></p>
+    <p>Podemos inverte também a configuração do box-inline, configurando para DISPLAY: BLOCK;</p>
+    
+    
+    <h2>Sombra na caixa</h2>
+    <p>Podemos colocar sombra nas caixas usando o atributo BOX-SHADOW, configuramos ele declarando 4 atributos: espaçamento horizontl, espaçamento vertical,espalhamento e cor da sombra.</p>
+    <p>Podemos fazer uma pré visualização ou pré edição através da função <b>inspecionar</b> do site. Basta clicar com o botão direito e selecionar inspecionar.</p>
+    <p>O elemento INSET serve para fazer sombra dentro da caixa. Deixei uma configuração de maneira exagerada no NAV > A para destacar o efeito.</p>
+    <h2>Vértices arredondados</h2>
+    <p></p>
+    <p><a href="pag02.html">PÁGINA 02</a></p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="SM" type="image/x-icon">
+    <title>Imagem dinâmica</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica - Essa informação está no vídeo 32/41</h1>
+    <p>Segue o link: <a href="https://www.youtube.com/watch?v=cAgkwPWE4hU&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=32" target="_blank" rel="external">Curso em vídeo</a></p>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+    <p>Abra uma tag PICTURE  e dentro dela abra um SOURCE MEDIA, nas especificaçãoes mude o MIN  para MAX e acrecente o valor máximo da imagem a qual você irá trabalhar. (ver no código), em seguida no atributo SRCSET diga qual a imagem alternativa deve aparecer caso o tamanho da tela do dispositivo seja menor, ou seja, o tamanho da figura mais adequado a se adaptar na tela e no atributo TYPE prencha o tipo de de extensão da imagem. Exemplo. Type="image/png"</p>
+    <p>Quando houver várias alternativas de imagens, deve-se colocar sempre o SOURCE menor por primeiro.</p>
+    Após essas especificações, acrescente tag IMG  e preencha normalmente, chamando a imagem de referência. Para ficar menos confuso, comece pela tag IMG.
+    <picture>
+        <source media="(max-width:750px )" srcset="imagem/foto-p.png"type="image/png">
+        <source media="(max-width:1000px)" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/" alt="Imagem flexível">
+    </picture>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Batman-icon.png" type="image/x-icon">
+    <title>Formatação de textos</title>
+    <style>
+        mark {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <h1>Principais formatações</h1> 
+   <h2>Negrito ou Destaque</h2>
+   <p>Temos um termo em <b>negrito</b> usando a tag b (não semântica).</p>
+   <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag strong.</p>
+   <h2>Itálico ou Ênfase</h2>
+   <p>Nesta frase temos um termo em <i>itálico</i> usando a tag i (não semântica).</p>
+   <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag em.</p>
+   <h2>Texto Marcado</h2>
+   <p>Podemos criar tb um <mark style="background-color: lawngreen;">texto marcado</mark> usando a tag mark</p>
+   <p>A única maneira de formatar a cor da marcação é através de CSS utilizando a tag style dentro da marcação</p>
+   <p>Pode-se tb configurar <mark>o cabeçalho</mark> em CSS a fim de formatar todas as <mark>marcações</mark> do código.</p>
+   <p>Podemos perceber que a tag mark formatada localmente não mudou enquanto as restantes ficaram sob o comando da formatação do cabeçalho.</p>
+   <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p>
+    <h2>Texto deletado</h2>
+    Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.
+    <p>Podemos marcar um <ins>texto como inculído</ins> para indicar que el foi adicionado depois.</p>
+    Existe tb a tag U para indicar o sublinhado (não semântica).
+    <h2>Texto sobreescrito</h2>
+    <p>Para inserir coisa do tipo x<sup>20</sup>+2</p>
+    <h2>Textosubscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+   <h1>Outras formatações</h1>
+   <h2>Código fonte</h2>
+   <p>O comando <code>document.getElemetById('teste')</code> é escrito em linguage JavaScript.</p>
+   <p>Usamos a tag CODE para fazer com que a fonte do texto fique monoespaçada.</p>
+   <p>Utilizamos tb para indicar que o texto é um código, porém, para que o mesmo fique formatado, como tal é preciso envelopa-lo com a tag PRE.</p>
+   <pre>
+       <code>
+            num = int(imptu)
+            if % 45
+            print('fim do programa')
+       </code>
+   </pre>
+   <h2>Citações</h2>
+   <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+   <p>A tag Q é usada para indicar citação. </p>
+   <h2>Citações completas</h2>
+   <p>Segundo Jeff Noble no seu livro Html para leigos:</p>
+   <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_For_Dummies/EGp9DgAAQBAJ?hl=pt-BR&gbpv=1&dq=html+xhtml+e+css+para+leigos&printsec=frontcover">
+     A diferença entre elementos inline e um bloco de texo é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+   </blockquote>
+   <p>A tag CITE serve para direcionar o código para a fonte da citação.</p>
+   <h2>Abreviações</h2>
+   <p>Estou estudando <abbr title="Hiper text markup Language">HTML</abbr> e <abbr title="Cascate style sheet">CSS</abbr>. Estou adorando.</p>
+   <p>Quando se trata de abreviações podemos envelopar as mesmas com a tag ABBR e colocar o significado das abreviações. Ao passar o mouse em cima da abreviação, aparecerá seu significado.</p>
+   <h2>Texto invertido</h2>
+   <p><bdo dir="rtl">Estou aprendendo HTML</bdo></p>
+   <p> A tag BDO coloca o texto para ser lido no sentido invertido, desde que você coloque o comando dir em RTL (right to left)</p>
+</body>
+</html>

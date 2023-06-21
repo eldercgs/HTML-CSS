@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Seletor id</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="principal" class="destaque" >Seletor</h1>
+    <p>O ID  é usado quando temos dois elementos iguais, mas queremos duas formatações diferentes.</p>
+    <p>Podemos inserir um ID dentro da tag desejada, peguemos , por exemplo o primeiro título do site, por ele ser o título principal podemos querer uma formatação diferenciada dos demais títutlos do site, nesse caso, colocaremos um identificador nele. Veja exemplo:</p>
+    <pre>
+        h1 id="principal">Seletor  /h1
+    </pre>
+    <p>Em seguida, nas folhas de estilo, (CSS) adicionamos o H1 com modificador.</p>
+    <pre>
+        h1#principal {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    </pre>
+   
+    <h2 class="basico destaque">Observção</h2>
+    <p>Tudo que em HTML  é id em CSS é # (cerquila).
+    Tudo que me HTML é class em CSS é <b>.</b>(ponto.)</p>
+
+    <h2 class="basico">Usando CLASS</h2>
+    <p>Pelas regras da W3C, só podemos acrescentar um ID no HTML, então como fafemos para fazermos as demais formatações?
+        Usaremos uma propriedade chama CLASS que basicamente tem a mesma função do ID, mas pode ser usada mais de uma vez. Veja o exemplo de como fica nas CSS:
+        <pre>
+            .basico {
+                color: rgb(85, 201, 8);
+                font-size: 24px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif
+            }
+        </pre>
+
+    </p>
+    <p>Podemos aplicar duas CLASS  a mesma tag. Veja exemplo:</p>
+    <pre>
+        h2 class="basico destaque" /h2
+    </pre>
+    
+    <h2 >Utilizando mais de uma CLASS</h2>
+    <p> Duas CLASS podem ser colocados dentro das mesmas aspas e não precisam ser separadas por sílabas.</p>
+    
+    <h1 class="destaque">SPAN</h1>
+    <p>A tag SPAN serve para que possamos envelopar elementos do texto, a fim de formatá-los. Veja no código:</p>
+    <pre>
+        Molestiae quis voluptate autem. Iure, span class="basico"> dolorem  /span> maxime exercitationem ipsa veniam.
+    </pre>
+    Foi escolhida uma palavra aleatória no texto (dolorem) e atribuida a ela uma classe. Assim a mesma acaba herdando a formatação da class BASICO na folha de CSS.
+    <pre>
+        .basico {
+            color: rgb(85, 201, 8);
+            font-size: 24px;
+            font-family:fantasy, Geneva, Tahoma, sans-serif;
+            background-color: azure ;
+        }
+    </pre>
+    <h2>ID e CLASS</h2>
+    <p>Podemos, também, colocar um ID e um CLASS na mesma tag. Exemplo:</p>
+    <pre>
+        h1 id="principal" class="destaque" >Seletor /h1>
+    </pre>
+    <p>Neste caso, declara-se a CLASS depois do ID separadamente, não é necessário vírgula.</p>
+</body>
+</html>

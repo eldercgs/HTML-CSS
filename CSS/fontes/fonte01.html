@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Fontes</title>
+    <style>
+        body{
+           /* font-family: 'work sans',Arial, Helvetica, sans-serif;
+            font weight;
+            font-size: 17px ;
+            font-style: italic;
+            text-decoration: underline;*/
+            font: italic bolder 1em arial;
+            
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;color: blue;
+        }
+        h2 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: blueviolet;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Pode-se configurar a fonte do site por meio do CSS solicitando uma fonte de maneira genérica, por exemplo: Com serifa ou sem serifa ou monoespaçada simplismente.
+        <pre>
+            <code>
+            style
+                body{
+                    font-family: sans-serif;
+                }
+            </code>
+            style
+            </code>
+        </pre>
+    </p>
+    <p>É possível, também usar a família das fonte:
+        <pre>
+            <code>
+                body{
+                    font-family: Arial, Helvetica, sans-serif
+                }
+            </code>
+        </pre>
+    </p>
+    <h2>Pesquisa de fontes</h2>
+    <p>Podemos pesquisar fontes, suas famílias e combinações no site <a href="https://www.w3schools.com/cssref/css_websafe_fonts.php" target="_blank" rel="extenal">w3schools.com</a>.</p>
+    <h1>Tamanho das fontes</h1>
+    <p>Temos as medidas absolutas e as medidas relativas</p>
+    <h2>Medidas absolutas</h2>
+    <p>São medidas absolutas:</p>
+    <ul type="square">
+        <li>
+        cm, mm, in, px, pt (medida tipográfica, é utilizada no Word, por exemplo), pc
+        </li>
+    </ul>
+    <h2>Medidas Relativas</h2>
+    <ul>
+        <li>em, fx, rem, vw, vh, % </li>
+    </ul>
+    <p>Essas são algumas, mas existem outras.</p>
+    <p>O W3C recomenda, para o uso de fonte, utilizar as medidas <b>"em"</b> ou <b>"px"</b>.</p>
+    <p>16px, gerelamente é o tamanho normal da fonte. <u style="color:brown;
+    "><b>16px</b>, também, geralmente, é equilavelnte a <b>1em</b>.</u></p>
+    <p>Em caso de dúvidas, podemos acessar o <a href="https://nekocalc.com/px-to-em-converter" target="_blank" rel="extenal">site nekocalc.com</a> para fazermos a conversão.</p>
+    <h1>Peso das fontes</h1>
+    <p>Para configurar o peso das fontes usamos a tag FONT-WEIGHT. Para esta ação, podemos configurar com algumas opções pré configuradas: <b>lighter, normal, bold, e bolder</b>, ou podemos usar uma medida numérica que varia de <b>100 a 900</b>. É possível usar o atalho CONTROL + ESPAÇO que aparecerão as opções.</p>
+    <h2>Estilo da fonte</h2>
+    <p>Usamos a tag FRONT-STYLE, para configuraro estilo das fontes. É importante lembrar que nem todoas as fontes tem todas as opções de estilo e peso.</p>
+    <h1>Shorthand</h1>
+    Épossível simplificar as configurações de fontes através de shorthands ("abreviações"), no caso das fontes, há uma ordem a ser seguida na configuração:
+    <ol>
+        <li>
+            font-style
+        </li>
+        <li>
+            font-weight
+        </li>
+        <li>
+            font-size
+        </li>
+        <li>
+            font-family
+        </li>
+
+    </ol>
+    <p>A seguir exemplo:</p>
+    <pre>
+        <code>
+            body{
+                
+                 font: italic bolder 1em arial;
+                 
+                }
+        </code>
+    </pre>
+    <p>Em vez de usar 4 linhas para codar, usa-se só uma linha. A seguir exemplo do código sem shorthand:</p>
+    <pre>
+        <code>
+            font-style: italic;
+            font weight;
+            font-size: 16px ;
+            font-family: 'work sans',Arial, Helvetica, sans-serif;
+            
+        </code>
+    </pre>
+    <p>Não existe Shorthand para tudo, mas exisem muitos tipos de shorthands que podem ajudar no código. Pode-se usar o shorthand somente com as tags que são necessárias, porém as tags preisam estar na ordem pré estabelecida. Exemplo</p>
+    <pre><code>
+        font: bolder 1em times New Roman;
+    </code></pre>
+</body>
+</html>

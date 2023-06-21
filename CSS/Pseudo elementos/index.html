@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title><pseudo-elementos</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children (deriva ou está dentro de algo)
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a {
+            color: rgb(253, 8, 8);
+            text-decoration: none;/*retira o sublinhado*/   
+            font-weight: bold;
+        }
+        a:hover {
+            font-size: 18px; /* Quando passa o mouse por cima o link aumenta a fonte*/
+            text-decoration: underline; /* Qaundo o mouse passa em cima sublinha o link*/
+           
+        }
+        a:visited{
+            color: rgb(42, 202, 10);
+            background-color: blueviolet;
+           
+        }
+        a:active{
+            color: rgb(205, 50, 184);
+            background-color: black;
+        } /* Ao clicar e segurar o link fica rosa*/
+        a::after{
+            content: ' [Link]'; /*Adiciona conteúdo após o link*/
+            text-decoration: none;
+            font-weight: normal;
+            color: blue;
+        }
+        a::before{
+            content: '♯';
+        } /*Adiona conteúdos antes dos elementos*/
+        a:hover::after{
+            font-weight: bolder;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Personalizando links</h1>
+<ul>
+    <li><a href="https://github.com/eldercgs" target="_blank" rel="external">Repositório GitHub</a></li>
+    <li><a href="https://www.youtube.com/channel/UCfn4ceIQ5-sx6EhpaxboHug" target="_blank" rel="external">Canal do YouTube</a></li>
+    <li><a href="https://www.facebook.com/cleiton.gomessoares/" target="_blank" rel="external">Página do Facebook</a></li>
+    <h2>Mais algumas pseudo-classes</h2>
+    <ul>
+        <li>active: Trabalha a formatação dos links ativos do site;</li>
+        <li>visited:Faz edição dos links visitados, podemos alterar cor, sublinhado, tamanho etc. i</li>
+    </ul>
+
+</ul>
+<p><b><i>Pseudo-classes definem estados de elementos em HTML.</i></b></p>
+    <p>Pseudo-elementos mexem diretamente no conteúdo periférico do elemento. Podemos ativa-los colocando duas vezes :: depois da tag desejada. Veja exemplo:</p>
+    <pre>
+        a::after{
+            content: ' [Link]'; /*Adiciona conteúdo após o link*/
+            text-decoration: none;
+            font-weight: normal;
+            color: blue;}
+    </pre>
+    <p>É possível, também, usar uma combinação de pseudo-classe e pseudo-elemento:</p>
+    <pre>
+        a:hover::after{
+            font-weight: bolder;
+            color: black;
+        }
+    </pre>
+    <h2>Atenção</h2>
+    <p>Neste estudo de pseudo-classes e pseudo-elementoshá muita informação escrita no código, recomendo abri-lo para se inteirar mais do assunto.</p>
+    <p>Podemos copiar símbolos especiais no site <a href="https://erikasarti.com/" target="_blank" rel="external">erikasarti.com</a></p>
+</body>
+</html>

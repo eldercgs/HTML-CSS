@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Hover</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        div:hover {
+            color: red;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 300px;
+        }
+    </style>
+    <p></p>
+</head>
+<body>
+    <h1>Exemplos de hover</h1>
+   
+    Passe o mouse sobre o texto abaixo. 
+    <div>Passe o mouse aqui!
+    <p>Texto escondido...</p>
+    </div>
+    <p><a href="index.html">Página 01</a></p>
+    <p>Podemos configurar elementos dentro das DIVs, quando escritos no CSS utilizamos o sinal ">" para indicar que pertence a DIV. Exemplo:</p>
+    <pre>
+        div > p {
+            display: none;
+        } 
+    </pre>
+    <p>Significa que o parágrafo dentro da DIV, quando passado o mouse em cima, terá a seguinte reação, no caso, mostrar o texto escondido pela  primeira configuração da DIV.</p>
+</body>
+</html>

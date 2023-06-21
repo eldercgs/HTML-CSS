@@ -1,0 +1,39 @@
+@charset "UTF-8"; /*regra para aceitar acentuações, opcional*/
+/*Tudo que em HTML  é id em CSS é # (cerquila)*/
+/*Tudo que me HTML é class em CSS é .(ponto)*/
+body {
+    background-color: rgb(153, 247, 215);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(12, 175, 61);
+    
+}
+h1#principal {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+    background-color: beige;
+
+}
+h2 {
+    color: rgb(41, 80, 207);
+}
+.basico {
+    color: rgb(85, 201, 8);
+    font-size: 24px;
+    font-family:fantasy, Geneva, Tahoma, sans-serif;
+    background-color: azure ;
+}
+.intermediario {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    background-color: azure;
+}
+p {
+    text-align: justify;
+}
+.destaque { background-color: rgba(170, 144, 194, 0.705);
+
+}

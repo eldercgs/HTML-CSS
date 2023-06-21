@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Borda personaliza</title>
+    <style>
+        h1 {
+            border: 20px solid black;
+            border-image-source: url('borda.png');
+            border-image-slice: 20;
+            border-image-repeat: repeat;
+            text-align: center;
+            /*border-image: url('borda.png' 27 repeat;
+            );*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+    <p>Primeiramente escolhemos uma imgem do tamanho adequado, no código em questão, fizemos uma no GIMP, tamanho 80 por 80 e salvamos na pasta do projeto. Depois Escolhemos o elemento ou a caixa a ser aplicada a borda decorada, após isso chamamos o atributo BORDER-IMAGE-SOURCE: URL ('') E pesquisamos imagem da pasta (CTRL + ESPAÇO), usamos BORDER-IMAGE-SLICE e atribuimos um valor qualquer, o qual vai nos ajudar a medir o parâmentro da nossa borda decorada (esse número pode ou vai mudar conforme nossa necessidade) e por fim utilizamos BORDER-IMAGE-REPAET  na função REPEAT para fazer com que a imagem se extenda pelo perímetro da imagem.</p>
+    <pre>
+        style
+            h1 {
+                border: 20px solid black;
+                border-image-source: url('borda.png');
+                border-image-slice: 20;
+                border-image-repeat: repeat;
+                text-align: center;
+            }
+        /style
+    </pre>
+    <p>É possivel simplicar a configuração com um SHORTHAND</p>
+    <pre>
+        border-image: url('borda.png') 27 repeat;
+    </pre>
+</body>
+</html>

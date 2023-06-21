@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+
+    <style>
+        body {
+            
+            background-image: linear-gradient(45deg, #3C7A71 10%, #26C7AF 30%,#ffffff); 
+            background-attachment: fixed;
+            
+        }
+        h1 {text-align: center;}
+    </style>
+    <title>Cores</title>
+</head>
+<body>
+    <h1>Cores</h1>
+    <!--Representação por nomes-->
+    <h2 style="background-color: blue;  color:#ffffff;">Exemplo de cores</h2>
+    <p>Podemos representar as cores em CSS de qutro formas:</p>
+    <ul>
+        <li>Por nome: Escrevendo o nome da cor desejada (em inglês). Ex. red, white, black etc.</li>
+        <li>Código exadecimal: Combinação de números e letras que variam de 0 a 10 e da letra "a" ate'a letra "f"</li>
+    
+    </ul>
+     <!--Representação por códigos  exadecimais-->
+     <!-- exadecimal - 1,2,3,4,5,6,7,8,9,0, a,b,c,d,e,f-->
+    <h2  style="background-color: #0000ff;  color:white;">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis eius iste tempora dolorum, incidunt laboriosam quia, nesciunt qui aut quaerat recusandae nisi earum sunt consequatur reiciendis rem doloribus. Quae.</p>
+    <!--Representação em RGB (Red, Blue, Green)-->
+    <h2 style="background-color: rgb(0,0, 255); color: rgb(255, 255, 255);">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis eius iste tempora dolorum, incidunt laboriosam quia, nesciunt qui aut quaerat recusandae nisi earum sunt consequatur reiciendis rem doloribus. Quae.</p>
+    <!--Representação em HSL (Hue, Saturation, Luminosity)-->
+    <h2 style="background-color: hsl(240,100%,50%); color: hsl(0,0%,100%);">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis eius iste tempora dolorum, incidunt laboriosam quia, nesciunt qui aut quaerat recusandae nisi earum sunt consequatur reiciendis rem doloribus. Quae.</p>
+
+    <h1>Criando Degradê</h1>
+    <p> Colocamos o Degradê no site por meio do CSS, neste código o mesmo está sendo feito localmente, ouseja, configurado no cabeçalho do site (HEAD), Abrimos um STYLE  e adicionamos,por exemplo BODY, para alterar a cor de fundo em Degradê e depois usamos a tag BACKGROUND-IMAGEM e depois selecionamos LINEAR-GRADIENTE, onde escolhemos o sentido do Degradê e depois da cor inicial a cor final.
+        Segue exemplo do código:
+        <pre>
+            <code>
+               
+                    body {
+            
+                        background-image: linear-gradient(to bottom, white, blue);
+            
+            
+                    }
+            
+             
+            </code>
+        </pre>
+    </p>
+    <p>Ainda é possível fazer o Degradê variar mais de uma vez, por exemplo: de azul, para branco e depois voltar novamente para o azul.</p>
+    <p> A mesma técnica pode ser feita com exadecimal:
+        exemplo:
+        <pre>
+            <code>
+                body {
+            
+                    background-image: linear-gradient(to bottom, #3C7A71, #26C7AF); 
+                    
+                    
+                }
+            </code>
+        </pre>
+    </p>
+    <p>É possível usar o Adobe color ou outra ferramenta do gênenro para extrair o código da cores.</p>
+    <p>Assim como as cores nominais, podemos colocar quantas cores quisermos.</p>
+    <p>
+        Podemos direcionar as cores por ângulos em vez de direções (to top, bottom, right, left), assim usamos o valor do ângulo e a trerminação DEG. Vejo a seguir:
+        <pre>
+            <code>
+                body {
+        
+                    background-image: linear-gradient(45deg, #3C7A71, #26C7AF,#ffffff);
+        
+        
+                }
+            </code>
+            
+        </pre>
+        As cores irão ficar em degradê num ângulo de 45 graus.
+    </p>
+    <p>Dentro do STYLE, ainda podemos configurar o BODY com a BACKGROUND- ATTACHMENT e selecionarmos FIXED, isso fará que o degradêse fixe na página, não variando com a rolagem. vejo o código.
+        <pre>
+            <code>
+                background-attachment: fixed;
+            </code>
+        </pre>
+    </p>
+    Na função BACKGROUND-IMAGEM podemos selecionar o RADIAL-GRADIENT  e vez de direcionamento ou ângulos e podemos escolher o formato do degradê, por exemplo CIRCLE.
+    <pre>
+        <code>
+            background-image: radial-gradient(cirlce, white,blue);
+        </code>
+    </pre> 
+    <p>Ainda podemos configurar a quantidade da cor que aparece no site através de porcentagem, colocamos a porcentagem imediatamente após a cor.</p>
+    <p><img src="codigo.jpg" alt="código html"></p> <!--Teste com um print editado no GIMP-->
+    <p>código:
+        <pre>
+            <code>
+                body {
+            
+                    background-image: linear-gradient(45deg, #3C7A71 10%, #26C7AF 30%,#ffffff); 
+                    background-attachment: fixed;
+                    
+                }
+            </code>
+        </pre>
+    </p>
+    <h2><b>Importante</b></h2>
+    <p>Importante lembrar que o ideal é a paleta conter entre 3 e 5 cores.</p>
+</body>
+</html>
