@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        div.quadrado {
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: gray;
+        }
+        #q1 {
+            background-color: skyblue;
+        }
+        #q2 {
+            background-image: linear-gradient(to bottom, yellow, orange);
+        }
+        #q3 {
+            background-image: url('pattern003.png') ;
+        }
+        body {
+            background-image: url('wallpaper001.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div  class="quadrado" id="q2">
+
+    </div>
+    <div  class="quadrado" id="q3">
+
+    </div>
+    <p>Podemos colocar fundo nas caixas de 3 maneiras:</p>
+    <p>Usando a função BACKGROUND-COLOR, como até agora temos feito para colocar uma cor qualquer. Podemos usar BAKCKGROUND-IMAGE: LINEAR-GRADIENT para definir um gradiente de cores e em que sentido isso ocorrerá e podemos usar o BACKGROUND-IMAGE: URL('') e usar uma imagem da nossa pasta de arquivo. Podemos ver o código abaixo referente as imagens acima.</p>
+    <pre>
+        style>
+            div.quadrado {
+                border: 2px solid black;
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+                border-radius: 10px;
+                background-color: gray;
+            }
+            #q1 {
+                background-color: skyblue;
+            }
+            #q2 {
+                background-image: linear-gradient(to bottom, yellow, orange);
+            }
+            #q3 {
+                background-image: url('pattern003.png') ;
+            }
+        /style> 
+    </pre>
+</body>
+</html>
