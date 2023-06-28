@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            position: relative; /*Todo posicionamento por padrão é relativo, o comando é só pra explicitar.*/
+            height: 500px;
+            background-color: purple;
+            padding: 10px;
+            background-image: url(target001.png);
+            background-size: 100% 100%;
+
+        }
+        #conteudo {
+            background-image: url(target001.png);
+            background-size: 100% 100%;
+            background-color: yellow;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+            <p>O conteúdo é relative e o container é absolute. Quando se configura dessa maneira é possível usar duas propriedades: LEFT  e TOP.</p>
+            <p>TOP  e LEFT podem ser prenchidos tanto em pixels quanto em porcentage.</p>
+            <b>
+                <p>Utilizamos a propriedade TRANSFORM: TRANSLATE () para movimentar o conteúdo, quando colocamos números positivos a caixa se movimenta para baixo e para esquerda e quando colocamos números negativos a caixa se posiciona para cima e para a direita. Assim, podemos movimentar a caixa para posicion-la onde for necessário, no caso, centralização.</p>
+            </b>
+        </article>
+    </section>
+</body>
+</html>
