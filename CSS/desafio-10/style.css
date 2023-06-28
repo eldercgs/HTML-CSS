@@ -111,6 +111,9 @@
         border-radius: 10px;
         padding-bottom: 15px;
     }
+    aside a:visited{
+        color: #1a5c37;
+    }
     aside > ul {
         list-style-position: inside;
         columns: 2;
@@ -133,6 +136,14 @@
     a.externo::after {
         content: "\2693";
     }
+    a {
+        text-decoration:none;
+        
+    }
+    a:visited {
+        color: #2fa866;
+    }
+
     img {
       
         width: 100%;
@@ -156,9 +167,18 @@
         background-color: var(--cor5);
         text-align: center;
         padding: 5px;
-        
-        
+        color: #83e1ad;
+       
     }
+    footer a:visited{
+        color: #c5ebd6;
+    }
+    footer p{
+        text-align: center;
+    }
+    
+    
+    
     
     
     
