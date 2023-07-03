@@ -7,10 +7,26 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: aquamarine;
+            padding: 5px;
+
+        }
         table {
             width: 500px;
             border: 1px solid black;
             border-collapse: collapse;
+            position: relative;
+        }
+        tbody > tr > th {
+            position: sticky;
+            top: -1;
+            background-color: rgb(63, 61, 61);
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: aqua;
         }
         /*th {
             border: 1px solid black;
@@ -39,6 +55,7 @@
     p Anatomia para tabelas grandes:
     <pre>
         TABLE 
+            CAPTION
             THEAD 
                 TD, TR, TH (TH é título)
             TBODY 
@@ -46,11 +63,24 @@
             TFOOT 
                 TD, TR, TH
     </pre>
+    <p>Ainda no código, dentro do TH, devemos adicionar o scope, o qual ajuda os mecanismos de buscas do Goolge a analisar sua tabela.</p>
+    <p>Quando falamos de configuração de linhas da tabela, para a melhor visualização podemos usar o efeito zebrado e pra isso estlizamos as linha dentro do TBODY, porém usando uma pseudoclassse  NTH CHILD (). Dentro dos parênteses colocamos o intervalo do zebramento das linhas, no caso do código 2 em 2 para que a tabela fique zebrada. Sde por acaso, em vez de o núemro de colocarmos o número de linhas que queremos o intervalo colocarmos ODD (ímpar) serão configuradas todas as linhas com numeração ímpar. O mesmo serve se colocarmos EVEN (par).
+        <p>Vamos colocar  cabeçalho fixo na tabela: Primero vamos colocar a tabela em posição relativa. (position:relative), depois estilizamos o TH, dentro do TR dentro do TBODY  coo posição STICKY, DEPOIS USAMOS TOP: 0 e configuramos o background novamente com a cor que o mesmo estava anteriormente.</p>
+        <pre>
+
+        </pre>
+    </p>
+    <pre>
+        tbody > tr:nth-child(2n) {
+            background-color: aqua;
+        }
+    </pre>
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
                 
             </tr>
         </thead>
@@ -72,7 +102,7 @@
         </tbody>
         <tfoot>
             <tr>
-               <th>Total de habitantes</th>
+               <th scope="row">Total de habitantes</th>
                <td class="pe">82.000.000</td>
             </tr>
         </tfoot>

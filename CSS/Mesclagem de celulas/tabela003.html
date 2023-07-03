@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style> 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <p>Para mesclarmos uma célula, a fim de que ela ocupe duas colunas, usamos dentro da tag TD o traibuto COLSPAN "", onde dentro das aspas colocamos o número de colunas a serem ocupadas.</p>
+    <p>Agora, se quisermor que haja uma mesclagem em linha, devemos usar ROWSPAN "".</p>
+    <pre>
+        td colspan="2" B /td
+    </pre>
+    <table>
+        <tr>
+            <td>A </td>
+            <td colspan="2">B </td>
+            
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td rowspan="3">F</td>
+        </tr>
+        <tr>
+            
+            <td>I</td>
+            <td>J</td>
+        </tr>
+        <tr>
+            
+            <td>L</td>
+            <td>M</td>
+        </tr>
+    </table>
+</body>
+</html>
