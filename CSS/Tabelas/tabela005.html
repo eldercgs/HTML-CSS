@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabela</title>
+    <style>
+        table, td, th {
+            width: 500px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        /*col.nome {
+            background-color: aqua;
+        }
+        col.sexo {
+            background-color: aqua;
+        }
+        col.idade {
+            background-color: aqua;
+        }
+        col.prof {
+            background-color: aqua;
+        }*/
+    </style>
+</head>
+<body>
+    <H1>Destacando colunas</H1>
+    <p>A fim de destacar as colunas de uma tabela, dentro da tabela criamos a tabela COLGROUP e dentro desta, criamos a tag col, o número de COL depende do número de colunas. Depois só estilizar os COLs coo se fosse uma class.</p>
+    <pre>
+        <code>
+            colgroup>
+                col class="nome">
+                col class="sexo">
+                col class="idade">
+                col class="prof">
+            /colgroup>
+        </code>
+    </pre>
+    <pre>
+        <code>
+            col.nome {
+                background-color: aqua;
+            }
+            col.sexo {
+                background-color: aqua;
+            }
+            col.idade {
+                background-color: aqua;
+            }
+            col.prof {
+                background-color: aqua;
+            }
+        </code>
+    </pre>
+    <p>Podemos optar também, por colocar uma tag span "" dentro do COL, onde o número dentro das aspas representa o número de colunas que aquela configuração vai atingir.</p>
+    <pre>
+        <code>
+            colgroup>
+                col class="nome">
+                col class="cgroup span "2"
+                col class="prof">
+            /colgroup>
+        </code>
+    </pre>
+    <pre>
+        style {
+            .colgroup {
+                background-color: yellow;
+            }
+        }
+    </pre>
+    <p>Na codação a cima, a coluna sexo e idade ficariam com a cor amarela.</p>
+    <table>
+        <colgroup>
+        <col class="nome">
+        <col class="sexo">
+        <col class="idade">
+        <col class="prof">
+    </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+    </table>
+</body>
+</html>
