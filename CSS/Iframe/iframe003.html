@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+    <title>Uso di iframe</title>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>A fim de que o iframe não abra em branco na página, podemos colocar no SRC='', a referência de um site ou uma página inicial, assim o iframe carregará essa págima quando aberto o site.</p>
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="iframe001.html" target="frame">Segunda página</a></li>
+        <li><a href="iframe002.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>Podemos em vex SRC, usar SRCDOC, assimpodemos adicionar texto formatado em HTML, por exemplo. podemos adicionar até mesmo um parágrafo, porém é preciso sempre colocar uma tag do lado da outra.</p>
+    <pre>
+        
+            iframe id="tela" name="frame" srcdoc="h1>Escolha umas das opções acima./h1> p>nsectetur adipisicing elit. Earum itaque cum sint impedit cupiditate quasi <br>, ducimus ex adipisci fugit rem consectetur beatae nesciunt nemo cumque in odio autem necessitatibus quas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Eligendi, ratione neque /p>" /iframe>
+        
+    </pre>
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha umas das opções acima.</h1> <p>nsectetur adipisicing elit. Earum itaque cum sint impedit cupiditate quasi, ducimus ex adipisci fugit rem consectetur beatae nesciunt nemo cumque in odio autem necessitatibus quas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, ratione neque </p><img src='imagens/batman.jpeg'>">
+        <p>Infelizmente seu navegador não é compatível.</p>
+    </iframe>
+    
+    <p>Podemos, também, colocar uma imagem dentro do Iframe utilizando a tag img, porém precisamos usar aspas simples. Todas as tags ficam por exetenso dentro do iframe.</p>
+    <pre>
+        img src='imagens/batman.jpeg'>
+    </pre>
+</body>
+</html>
