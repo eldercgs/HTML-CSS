@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            max-width: 800px;
+        }
+    </style>
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Uma das preocupações em se usar o iframe é a segurança. Referente a coleta de dados por sites de terceiros, podemos proteger o iframe adicionando dentro da tag SANDBOX="SANDBOX", assim o botão de ação do formulário ficará inativo.</p>
+    <pre>
+        iframe src="pag004.html" sandbox="sandbox"  >Seu navegador não é compátivel com isso. /iframe>
+    </pre>
+    <iframe src="pag004.html" sandbox="sandbox" referrerpolicy="no-referrer"  >Seu navegador não é compátivel com isso. </iframe>
+
+    <p>podemos adicionar REFERREPOLICY="NO-REFERRER",onde dizemos que o conteúdo que está carregado dentro do iframe não irá coletar qualquer dado do usuário.</p>
+    <pre>
+        <code>
+            iframe src="pag004.html" sandbox="sandbox" referrerpolicy="no-referrer"  >Seu navegador não é compátivel com isso. /iframe>
+        </code>
+    </pre>
+    <p>Para mais detalhes qauntoa autorização de contúdos do iframe dentro site, consultar aula 09 do módulo 4 de <HTML5>CSS3</p>
+</body>
+</html>
